@@ -1,1 +1,1 @@
-# India-Food-Recipes
+# Indian Food Recipes
