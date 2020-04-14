@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13320837305",
+    "firebase_url": "https://india-food-receipes.firebaseio.com",
+    "project_id": "india-food-receipes",
+    "storage_bucket": "india-food-receipes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13320837305:android:af0e21e60d662dee8fe368",
+        "android_client_info": {
+          "package_name": "com.diyainfotech.indiafoodreceipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13320837305-aqc6fu3l40t0ansj25dg9lhbj3sndmjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1bMD5L-QnB_L_oeVznO09nyaVbGexFPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13320837305-aqc6fu3l40t0ansj25dg9lhbj3sndmjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
