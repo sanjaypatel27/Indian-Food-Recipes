@@ -12,4 +12,6 @@ data class Cook(
     val rssFeedUrl: String,
     val since: String,
     val site: String
-)
+){
+    constructor() : this("", "", "", -1, "", "","")
+}
