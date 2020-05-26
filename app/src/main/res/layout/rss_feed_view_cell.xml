@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newsCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    app:cardCornerRadius="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/mediaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/articleImage"
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+            <com.diyainfotech.indiafoodreceipes.util.CustomWebView
+                android:id="@+id/customWebView"
+                android:layout_width="match_parent"
+                android:layout_height="250sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mediaLayout"
+            android:layout_margin="10sp" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_margin="10sp"
+            android:ellipsize="end"
+            android:maxLines="5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/sourceFavicon"
+                android:layout_width="16sp"
+                android:layout_height="16sp" />
+
+            <TextView
+                android:id="@+id/source"
+                style="@style/Footnote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/linkColor" />
+
+            <TextView
+                android:id="@+id/publishDate"
+                style="@style/Footnote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_weight="0.4"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="viewEnd" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

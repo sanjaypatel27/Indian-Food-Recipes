@@ -3,20 +3,84 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cook_card"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="10sp"
-    app:cardCornerRadius="5sp"
-    android:layout_height="wrap_content">
+    app:cardCornerRadius="5sp">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/position"
+            style="@style/Title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp" />
 
         <TextView
             android:id="@+id/cook_name"
+            style="@style/Title1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="@color/colorAccent"
-            />
+            android:layout_alignBaseline="@id/position"
+            android:layout_toEndOf="@id/position"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_below="@id/position"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/position"
+            android:layout_marginStart="10sp"
+            android:layout_toEndOf="@id/image">
+
+            <TextView
+                android:id="@+id/about_site"
+                style="@style/SubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/Footnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_site" />
+            <TextView
+                android:id="@+id/frequency"
+                style="@style/Footnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location" />
+
+            <TextView
+                android:id="@+id/since"
+                style="@style/Footnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frequency" />
+            <TextView
+                android:id="@+id/site"
+                style="@style/SubTitle"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/linkColor"
+                android:layout_below="@id/since" />
+        </RelativeLayout>
+
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

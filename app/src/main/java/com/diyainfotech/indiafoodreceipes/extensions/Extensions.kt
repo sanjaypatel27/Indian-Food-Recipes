@@ -1,4 +1,4 @@
-package com.diyainfotech.covid19.extensions
+package com.diyainfotech.indiafoodreceipes.extensions
 
 import android.view.LayoutInflater
 import android.view.View

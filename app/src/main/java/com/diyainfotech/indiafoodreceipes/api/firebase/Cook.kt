@@ -1,17 +1,16 @@
 package com.diyainfotech.indiafoodreceipes.api.firebase
 
-import com.google.firebase.database.PropertyName
 
 data class Cook(
-    @PropertyName("about_site")
-    val aboutSite: String,
+    var about_site: String,
     val location: String,
     val name: String,
     val position: Int,
-    @PropertyName("rss_feed_url")
-    val rssFeedUrl: String,
+    var rss_feed_url: String,
     val since: String,
-    val site: String
+    val site: String,
+    val frequency: String,
+    var author_image_url: String
 ){
-    constructor() : this("", "", "", -1, "", "","")
+    constructor() : this("", "", "", -1, "", "","","","")
 }
